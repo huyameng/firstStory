@@ -1,0 +1,207 @@
+@import "ba";
+body,html{
+   height: 100%;
+}
+
+.footer{
+    position: fixed;
+    height: 0.87rem;
+    background: white;
+    width: 100%;
+    bottom: 0;
+    z-index:1000;
+    border-top: 0.01rem solid #ceced2;
+    ul{
+        display: flex;
+        li{
+       flex: 1;
+       text-align: center;
+       &.active{
+          .iconfont{
+              color: #e4554e;
+          }
+          .foods-title{
+              color: #e4554e;
+          }
+       }
+       .iconfont{
+           display: block;
+           font-size: 0.37rem;
+           color: #757575;
+           line-height: 0.52rem;
+           margin-top: 0.05rem;
+       }
+       .foods-title{
+           color: #757575;
+           font-size: 0.16rem;
+           line-height: 0.29rem;
+       }
+        }
+    }
+}
+
+.HomeTop{
+    width: 100%;
+    height: 0.8rem;
+    position: fixed;
+    background: #e4554e;
+    top: 0;
+    z-index:1000;
+    ul{
+    display: flex;
+    height: 0.8rem;
+    width: 5.16rem;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+  
+        li{
+    &.TopActive{
+      .TOPLink{
+        font-size: 0.29rem;
+        color: #ffffff;
+      }
+    }
+    flex: 1;
+    text-align: center;
+    .TOPLink{
+            width: 0.97rem;
+        display: block;
+        color: #eea3a1;
+        font-size: 0.26rem;
+        line-height: 0.80rem;
+        letter-spacing: 0.04rem;
+            }
+        }
+
+    }
+
+    .HomeAdd{
+        position: absolute;
+        right: 0;
+        height: 0.8rem;
+        top: 0;
+        width: 1.26rem;
+        line-height: 0.8rem;
+    
+        .iconfont{
+            font-size: 0.29rem;
+            color: #fefbfb;
+            text-align: center;
+        &.icon-jiahao{
+            margin-left: 0.21rem;
+            margin-right: 0.26rem;
+        }
+        }
+    }
+}
+
+
+.swiper-container{
+    margin-top: 0.8rem;
+    height: 3.07rem;
+    width: 100%;
+    .swiper-pagination{
+      height: 0.8rem;
+      width: 100%;
+      bottom: 0;
+      text-align: right;
+      left: -0.3rem;
+    .swiper-pagination-bullet{
+        margin: 0;
+        margin-left: 0.1rem;
+        border-radius: 0;
+        width: 0.16rem;
+        height: 0.05rem;
+        background: #828282; 
+        margin-top: 0.62rem;
+    &.swiper-pagination-bullet-active{
+       background: white;
+        }
+        }
+    }
+    .swiper-wrapper{
+        .swiper-slide{
+        height: 3.07rem;
+        width: 100%;
+        a{
+            display: block;
+              height: 3.07rem;
+              position: relative;
+                img{
+                width: 100%;
+                height: 100%;
+                }
+          p{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 0.8rem;
+              width: 100%;
+              background: rgba(0, 0,0,0.6);
+              font-size: 0.37rem;
+              color: white;
+              line-height: 0.8rem;
+              
+          } 
+        }
+          
+        }
+    }
+}
+
+
+.HomeList{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    ul{
+        height: 100%;
+.HomeList-pic{
+  height: 1.14rem;
+  border-bottom: 0.01rem solid #e3e3e3;
+  display: block;
+  padding: 0.23rem 0.17rem;
+  position: relative; 
+  .HomeList-pic-p{
+  float: right;
+   width: 2.07rem;
+   height: 1.14rem;
+   img{
+       width: 100%;
+       height: 100%;
+   }
+  }
+  .HomeList-pic-w{
+     float: left;
+      left: 0;
+      height: 1.14rem;
+      width: 3.72rem;
+      p{
+          margin-top: 0.08rem;
+          color: #121212;
+          font-size: 0.24rem;
+          height: 0.73rem;
+          line-height: 0.37rem;
+          letter-spacing: 0.01rem;
+      }
+      .HomeList-pic-box{
+          height: 0.35rem;
+          width: 3.72rem;
+          span{
+              font-size: 0.16rem;
+              color: #a9a8a8;
+              line-height: 0.35rem;
+               margin-right: 0.16rem;
+               letter-spacing: 0.02rem;
+               &.id{
+                   margin-right: 0;
+               }
+          }
+      }
+  }
+    }
+
+    }
+   
+}
