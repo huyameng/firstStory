@@ -1,0 +1,24 @@
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(item,index) in List" :key="index" >
+              <ul>
+        <li class="goods" v-for="list in item" @click="goods">
+                   <div class="goods-img">
+                       <img :src="list.MainImage" />
+                   </div>
+                   <a class="InfoTitle" href="javascript:;">
+                   <p>{{list.InfoTitle}}</p>
+                   </a>
+                   <p class="rmb">¥{{list.OrginalPriceRMB}}</p>
+     <div class="country">
+         <div class="country-pic"><img :src="list.countrySmallIcon" /></div>
+         <span>{{list.MallName}}</span></div>
+        </li>
+              </ul>
+            </div>
+             </div>
+      
+        <div class="swiper-pagination">
+           
+        </div>
+    </div>

@@ -1,0 +1,19 @@
+<div class="classlist-list">
+   
+    <ul>
+        <li>
+            <a href="javascript:;" class="iconfont icon-icon101"></a>
+            <p>全部分类</p>
+        </li>
+        <li v-for="item in Icon" >
+            
+            <a href="javascript:;" class="icon">
+                <div class="icon-box">
+                <img :src="item.CatImage"/>
+                </div>
+            </a>
+           
+             <p>{{item.CatName}}</p>
+        </li>
+    </ul>
+</div>

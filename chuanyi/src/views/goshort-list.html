@@ -1,0 +1,25 @@
+<div class="goshortList">
+    <ul>
+        <li class="goods-list">
+            <div class="goods-name">
+             <div class="true" @click="bx"  v-show="data"></div>
+             <div class="false" @click="bx" v-show="!data"></div>
+             <div class="goods-name-title">商品来源:<span>美国亚马逊</span></div>
+             <div class="iconfont icon-youbian x"></div>
+            </div>
+            <div class="goods-title">
+                <div class="xx" @click="by"  v-show="data1"></div>
+                <div class="yy" @click="by" v-show="!data1"></div>
+                <div class="goods-img">
+                  <img src="http://picture.biyabi.com/group1/M00/10/6E/Co00xFiHSCKANt6kAACEapL_A_8446.jpg">
+                </div>
+                <p>Nautica 诺帝卡 男士防皱格子短袖衬衫</p>
+                 <span class="goods-brand">Small,Blueprint</span>
+                 <span class="goods-price">单价:¥265.55</span>
+                 <div class="goods-amount">
+<span class="add" @click="jian">-</span><input type="number"  v-model="num"><span class="jian" @click="add">+</span>
+                 </div>
+            </div>
+        </li>
+    </ul>
+</div>

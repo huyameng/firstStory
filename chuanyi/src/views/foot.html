@@ -1,0 +1,10 @@
+<footer class="footer">
+    <ul>
+        <router-link v-for="item in list" tag="li" :to="item.path">
+            <a href="javascript:;">
+               <div class="iconfont" :class="item.className"></div>
+                <p>{{item.pName}}</p>
+            </a>
+        </router-link>
+    </ul>
+</footer>

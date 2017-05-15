@@ -1,0 +1,15 @@
+<div class="goshort">
+    <div class="goshort-nav">
+        <h3>购物车</h3>
+        <a href="javascript:;">编辑</a>
+    </div>
+ <goshortList :bx="bx" :data="data" :data1="data1" :by="by"></goshortList>
+    <div class="btn">
+        <div class="btn-h" v-on:click="box" v-show="!isshow">
+        </div>
+         <div class="btn-x" v-show="isshow" v-on:click="box"></div>
+        <span>全选</span>
+        <div class="btn-box">结算 <span></span></div>
+    </div>
+     <Bottom></Bottom>
+</div>

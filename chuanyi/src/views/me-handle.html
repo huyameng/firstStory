@@ -1,0 +1,52 @@
+<div class="me-handle">
+    <div class="me-level">
+     <a href="javascript:;" class="iconfont icon-shezhi"></a>
+     <div class="me-qiandao">
+         <a href="javascript:;" class="iconfont icon-pingfen"></a>
+         <span>签到</span>
+     </div>
+     <div class="me-pic">
+         <a href="javascript:;" class="iconfont icon-touxiang"></a>
+         <span>miss 胡</span>
+     </div>
+     <div class="me-lv">
+         <ul>
+             <li class="me-lv-li" v-for="(item,index) in PPList" :key="index">
+                 <span class="dengji">{{item.name}}</span>
+                 <span class="dengji-title">{{item.title}}</span>
+             </li>
+         </ul>
+     </div>
+    </div>
+    <div class="me-comment">
+        <ul>
+            <li class="comment-title" v-for="item in Com">
+             <div class="iconfont" :class='item.classname'></div>
+                <span class="comment-font">{{item.title}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="me-order">
+        <div class="order-guan">
+           <span class="order-title">订单管理</span>
+           <a href="javascript:;" class="iconfont icon-youbian"></a>
+        </div>
+        <div class="me-iconfont">
+            <ul>
+                <li class="me-iconfont-li" v-for="item in Order">
+                <a class="iconfont" :class="item.classname" href="javascript:;"></a>
+                <p>{{item.title}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="me-list">
+        <ul>
+            <li class="me-list-1" v-for="item in Url">
+                <div class="img"><img :src="item.src" /></div>
+                <span class="list-title">{{item.title}}</span>
+                <a href="javascript:;" class="iconfont icon-youbian xx"></a>
+            </li>
+        </ul>
+    </div>
+</div>
